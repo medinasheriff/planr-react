@@ -1,0 +1,257 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+.cancel-x {
+  font-size: 24px;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+header>div {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1rem;
+  margin-inline: 1rem;
+}
+
+.add-campaign {
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 8px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+.empty {
+  background-color: rgb(230, 230, 242);
+  height: 90vh;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.empty-content {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.empty-content>p {
+  width: 43%;
+}
+
+.empty-content button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  margin-inline: 0.5rem;
+  color: blue;
+}
+
+.empty-content img {
+  width: 180px;
+}
+
+.overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  inset: 0;
+}
+
+.modal {
+  background-color: #fff;
+  width: 95%;
+  max-width: 900px;
+}
+
+.modal-content {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid gray;
+}
+
+.modal-title>h2 {
+  margin-left: 1rem;
+}
+
+.modal-title>button {
+  margin-right: 1rem;
+}
+
+.modal-form {
+  margin-top: 1.5rem;
+}
+
+.modal-form {
+  padding-inline: 0.75rem;
+}
+
+.modal-form-top {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.modal-form-top {
+  margin-bottom: 3rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group>label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.form-group>input,
+.form-group>select {
+  background-color: transparent;
+  padding: 6px 6px;
+  border-radius: 6px;
+  border: 1px solid gray;
+  font-family: inherit;
+  font-size: 18px;
+  width: 100%;
+}
+
+.form-group>input::placeholder {
+  font-size: 16px;
+}
+
+.modal-form-top .form-group:last-child {
+  margin-top: 1.6rem;
+}
+
+.nav-tab {
+  display: flex;
+  gap: 1rem;
+}
+
+.locationInput,
+.strategyInput {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.tab {
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+}
+
+.tab:hover {
+  border-bottom: 2px solid blue;
+}
+
+.modal-form-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid grey;
+}
+
+.strategy-1 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.strategy-1 h5 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 1.65;
+}
+
+.strategy-1 p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1.5rem;
+  border-top: 1px solid gray;
+  column-gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.modal-footer button {
+  font-size: 15px;
+  padding: 6px 12px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.cancel {
+  background-color: grey;
+}
+
+.save {
+  background-color: blue;
+  margin-right: 3rem;
+}
+
+table,
+th,
+td {
+  width: 100%;
+  background-color: rgb(248, 244, 244);
+  border-bottom: 1px solid rgb(219, 216, 216);
+  border-radius: 3px;
+  padding: 8px 14px;
+  margin: 5% auto;
+  text-align: left;
+  white-space: nowrap;
+}
+
+@media (min-width: 600px) {
+  .modal-form-top {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0.5rem;
+  }
+
+  .locationInput {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0.5rem;
+  }
+
+  .strategyInput {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.2rem;
+  }
+}
