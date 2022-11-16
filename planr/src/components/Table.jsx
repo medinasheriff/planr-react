@@ -41,7 +41,7 @@ function Table({
             color: "blue",
             border: "none",
             backgroundColor: "#ffff",
-            whiteSpace:"nowrap",
+            marginLeft:"6px",
           }}
             onClick={() => {
               handleEdit(id);
