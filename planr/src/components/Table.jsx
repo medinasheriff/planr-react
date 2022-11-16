@@ -37,6 +37,12 @@ function Table({
         <td>
           <input type='radio'/>
           <button
+           style={{
+            color: "blue",
+            border: "none",
+            backgroundColor: "#ffff",
+            whiteSpace:"nowrap",
+          }}
             onClick={() => {
               handleEdit(id);
               setShowCampaign(true);
