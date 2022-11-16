@@ -68,12 +68,12 @@ function Table({
             onChange={(e) => setInputValue(e.target.value)}
             style={{ padding: "8px" }}
           />
-          <button
+          {/* <button
             type='submit'
             style={{ backgroundColor: "blue", color: "#fff", padding: "8px" }}
           >
             Search
-          </button>
+          </button> */}
         </form>
       </div>
       <div className='container'>
