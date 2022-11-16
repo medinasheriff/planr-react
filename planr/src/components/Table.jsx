@@ -35,6 +35,7 @@ function Table({
     return (
       <tr key={`${state}-${idx}`}>
         <td>
+          <input type='radio'/>
           <button
             onClick={() => {
               handleEdit(id);
