@@ -66,7 +66,7 @@ function Table({
             placeholder='Search By Status'
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            style={{ padding: "8px" }}
+            style={{ padding: "8px", border: "2px solid grey", borderRadius: "4px" }}
           />
           {/* <button
             type='submit'
